@@ -34,7 +34,7 @@ class Solution():
 def main():
     # A = [1, 2, 3, 4]
     # A = (-2, 1, -3, 4, -1, 2, 1, -5, 4)
-    A = (-500, )
+    A = (-500,)
     a = Solution()
     maxsum = a.maxsubarray(A)
     print(maxsum)
