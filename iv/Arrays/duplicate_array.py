@@ -17,3 +17,4 @@ class Duplicate():
                         break
             start = start + 1
         return A
+
