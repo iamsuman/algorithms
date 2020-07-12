@@ -15,9 +15,6 @@ def make_list(elements):
     return head
 
 
-
-
-
 class Palindrom():
     # @param A : head node of linked list
     # @return an integer
@@ -45,6 +42,7 @@ class Palindrom():
         print("fast")
         myprint(fast)
         myprint(slow)
+        myprint(A)
 
         while fast and slow:
             if fast.val != slow.val:
@@ -63,7 +61,8 @@ def myprint(x):
 
 
 A = [1,2,3,2,1]
-# A = [1,2,3,2,2,2,2 ,2,1]
+A = [1,2,3,4,5]
+A = [1,2,3,3,2,1]
 
 x = make_list(A)
 y = Palindrom()
