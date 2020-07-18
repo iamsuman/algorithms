@@ -8,13 +8,13 @@ class Arrange():
             m = A[A[i]]
             A[i] += (m % n) * n
 
-        print(A)
+        # print(A)
         for i in range(0, n):
             A[i] = int(A[i] / n)
 
         return A
 
-A = [ 3,2, 0,  1 ]
+
+A = [3, 2, 0, 1]
 a = Arrange()
 print(a.arrange(A))
-
