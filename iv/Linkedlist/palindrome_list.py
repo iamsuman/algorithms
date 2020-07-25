@@ -39,10 +39,10 @@ class Palindrom():
         if flag:
             slow = slow.next
 
-        print("fast")
-        myprint(fast)
-        myprint(slow)
-        myprint(A)
+        # print("fast")
+        # myprint(fast)
+        # myprint(slow)
+        # myprint(A)
 
         while fast and slow:
             if fast.val != slow.val:
