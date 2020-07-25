@@ -1,12 +1,10 @@
 class Prime():
     def primesum(self, A):
-        sieve = [True for i in range(1, A + 1)]
-        k = 2
-        while (k * k < A + 1):
-            if sieve[k] == True:
-                for i in range(k * k, A, k):
-                    sieve[i] = False
-            k += 1
+        sieve = [True for i in range(A + 1)]
+        for i in range(2, A + 1):
+            if sieve[i]:
+                for j in range(i * i, A, i):
+                    sieve[j] = False
 
         for i in range(2, A):
             if sieve[A - i] and sieve[i]:
@@ -60,5 +58,7 @@ class Prime():
 a = Prime()
 # print(a.isprime(10))
 # print(a.prime_list_1(100))
-print(a.prime_sum(200))
+# print(a.primesum(200))
+print(a.primesum(4))
 print(a.primesum(16777214))
+# print(a.primesum(16777214))
