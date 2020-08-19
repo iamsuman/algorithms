@@ -1,0 +1,6 @@
+[run]
+source = iv
+omit = "*venv*"
+
+[report]
+omit = "./venv*"
