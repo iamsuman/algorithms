@@ -47,7 +47,7 @@ setup(
     setup_requires=setup_requirements,
     test_suite='tests',
     tests_require=test_requirements,
-    url='https://github.com/iamsuman/iv',
+    url='https://github.com/iamsuman/algorithms',
     version='0.1.0',
     zip_safe=False,
 )
