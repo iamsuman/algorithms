@@ -1,13 +1,15 @@
 class Prime():
     def primesum(self, A):
+        if A == 4:
+            return [2, 2]
         sieve = [True for i in range(A + 1)]
         for i in range(2, A + 1):
             if sieve[i]:
                 for j in range(i * i, A, i):
                     sieve[j] = False
 
-        for i in range(2, A):
-            if sieve[A - i] and sieve[i]:
+        for i in range(3, A, 2):
+            if sieve[i] and sieve[A - i]:
                 return [i, A - i]
 
     def prime_sum(self, A):
