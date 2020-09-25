@@ -20,7 +20,7 @@ class Solution(object):
         return res
 
 s = "++++"
-
+# s = "----"
 sol = Solution()
 print(sol.generatePossibleNextMoves(s))
 
