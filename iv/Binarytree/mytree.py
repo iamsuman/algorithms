@@ -7,6 +7,8 @@ class TreeNode:
 
 class MyTree:
     def maketree(self, arr: list) -> TreeNode:
+        if len(arr) == 0:
+            return TreeNode()
         root = TreeNode(arr[0])
         mystack = [root]
         nl = []
