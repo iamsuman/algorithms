@@ -50,13 +50,14 @@ class Solution:
         return k_num[::-1]
 
 
-num = [2,1,5]; k = 806
-num = [9,9,9,9,9,9,9,9,9,9]; k = 1
-num = [1,2,0,0]; k = 34
-num = [2,7,4]; k = 181
-num = [1]; k = 99
-num = [6]; k = 809
+if __name__ == "__main__":
+    num = [2,1,5]; k = 806
+    num = [9,9,9,9,9,9,9,9,9,9]; k = 1
+    num = [1,2,0,0]; k = 34
+    num = [2,7,4]; k = 181
+    num = [1]; k = 99
+    num = [6]; k = 809
 
-s = Solution()
-print(s.num_to_array(k))
-print(s.addToArrayForm(num, k))
+    s = Solution()
+    print(s.num_to_array(k))
+    print(s.addToArrayForm(num, k))
