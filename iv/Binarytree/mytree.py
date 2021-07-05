@@ -41,7 +41,7 @@ class MyTree:
         while len(my_stack) > 0:
             temp = []
             for node in my_stack:
-                print(f"{node.val}", end=" ")
+                # print(f"{node.val}", end=" ")
                 if node.left:
                     temp.append(node.left)
                     res.append(node.left.val)
@@ -53,7 +53,7 @@ class MyTree:
                 else:
                     res.append("null")
             my_stack = temp
-            print("")
+            # print("")
 
         counter = 0
         for i in range(len(res)):
