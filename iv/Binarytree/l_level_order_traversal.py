@@ -12,7 +12,6 @@ class Solution:
             if root:
                 res.append(root.val)
                 print(root.val)
-
             else:
                 return []
             if root.left:
@@ -20,9 +19,9 @@ class Solution:
             if root.right:
                 Traversal(root.right, res)
 
-
         Traversal(root, res)
         return res
+
 
 t = TreeNode(3)
 t.left = TreeNode(9)
