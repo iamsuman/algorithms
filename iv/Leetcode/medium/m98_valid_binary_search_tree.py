@@ -37,6 +37,26 @@ class Solution:
                     rstatus = self.isValidBST(root.right)
         return lstatus and rstatus
 
+    def isValidBST3(self, root: Optional[TreeNode]) -> bool:
+
+        res = []
+        def traverse(root: TreeNode):
+            if root:
+                if root.left:
+                    traverse(root.left)
+                res.append(root.val)
+                if root.right:
+                    traverse(root.right)
+        traverse(root)
+        if len(res) == 1:
+            return True
+        for i in range(len(res) -1):
+            if res[i] > res[i+1]:
+                return False
+        return True
+
+
+
 
 
 
