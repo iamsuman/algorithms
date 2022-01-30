@@ -8,8 +8,6 @@ class Solution:
                 mystack.append(s[i])
         return "".join(mystack)
 
-
-
     def removeDuplicates2(self, s: str) -> str:
         found = 1
         while found > 0:
